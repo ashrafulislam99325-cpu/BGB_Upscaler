@@ -1,0 +1,16 @@
+Offline neural model attribution
+================================
+
+Model: Real-ESRGAN-x4plus (Qualcomm mobile-deployment TFLite export)
+Repository: https://huggingface.co/qualcomm/Real-ESRGAN-x4plus
+Pinned revision: 94d7747a81c477e9d5ca6947d7d0b6bf0b47eaf0
+Model file: Real-ESRGAN-x4plus.tflite
+
+The model is downloaded by the Android app on the user's request and validated by opening it with the TensorFlow Lite runtime before use. It is not bundled in this source ZIP. The upstream repository
+identifies the original Real-ESRGAN implementation as BSD-3-Clause and points
+to a separate deployment-model license for compiled assets. Review the current
+upstream model and deployment license before redistribution or commercial use.
+
+Research references:
+- https://huggingface.co/qualcomm/Real-ESRGAN-x4plus
+- https://github.com/xinntao/Real-ESRGAN

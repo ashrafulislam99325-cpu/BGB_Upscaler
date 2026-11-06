@@ -1,0 +1,25 @@
+মোবাইল ফোন দিয়ে BGB_Upscaler APK বানানোর নিয়ম
+=============================================
+
+১. GitHub repository upload page:
+https://github.com/ashrafulislam99325-cpu/BGB_Upscaler/upload/main
+
+২. Android Project ZIP ফোনে ডাউনলোড করে Extract করুন।
+৩. Extract করা Android project-এর ভেতরের সব ফাইল ও .github ফোল্ডার upload করুন।
+   ZIP ফাইলটিকে নিজে upload করবেন না।
+   repository root-এ app/, .github/, build.gradle, settings.gradle থাকতে হবে।
+৪. Commit changes চাপুন।
+৫. Repository-র Actions tab খুলুন।
+৬. "Build BGB_Upscaler APK" workflow নির্বাচন করে "Run workflow" চাপুন।
+৭. Build সফল হলে workflow run খুলুন; নিচে Artifacts থেকে BGB_Upscaler-debug-apk ডাউনলোড করুন।
+৮. ZIP extract করে app-debug.apk ইনস্টল করুন।
+
+যদি ফোনের file picker-এ folder upload না হয়, GitHub website-এর desktop site চালু করুন
+অথবা GitHub mobile app/অন্য browser ব্যবহার করে ফাইলগুলো upload করুন।
+
+নোট:
+- প্রথম cloud build-এ কিছু সময় লাগতে পারে।
+- Build error এলে Actions-এর red run খুলে error log পাঠান।
+- APK debug build; Play Store release signing নয়।
+- Online AI ব্যবহারে নিজের HTTPS API endpoint লাগবে।
+- Real-ESRGAN model download ও বাস্তব ফোনে inference পরীক্ষা আলাদা করে করতে হবে।
